@@ -1,0 +1,9 @@
+.titleContainer {
+	display: flex;
+
+}
+.flagImg {
+	max-width: 50px ;
+	margin: auto 10px;
+	display: block
+}

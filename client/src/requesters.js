@@ -1,0 +1,11 @@
+export const requestAvailableCounties = async () => await fetch("/api/availableCountries")
+.then(res => res.json())
+.then(data => data)
+.catch(err => console.log(err)
+)
+
+export const requestCountryDetails = async (country, code) => await fetch(`/api/countryInfo?country=${country}&code=${code}`)
+.then(res => res.json())
+.then(data => data)
+.catch(err => console.log(err)
+)
