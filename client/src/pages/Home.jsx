@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { requestAvailableCounties } from '../requesters';
 
+import "./home.css"
 const Home = () => {
 	const [state, setState] = useState();
 
@@ -12,9 +13,13 @@ const Home = () => {
 	return (
 		<div>
 			{state &&
-				<ul>
+				<ul className='list'>
 					{state.map(country => {
-						return <li><a href={`/country/${country.name}/code/${country.countryCode}`}>{country.name}</a></li>
+						return <li className='listItem' key={country.name}>
+							<a href={`/country/${country.name}/code/${country.countryCode}`}>
+								{country.name}
+							</a>
+						</li>
 					}
 					)}
 				</ul>

@@ -2,6 +2,7 @@ const BordersWidget = ({ borders }) => {
 
 	return (
 		<>
+		<h2>This country shares borders with</h2>
 			<ul>
 				{borders.map((border) => {
 					return <li key={border.countryCode}>

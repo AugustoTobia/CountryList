@@ -1,5 +1,23 @@
+.container {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	background-color: #ffbb55;
+	padding: 2%;
+	margin: 2%;
+}
+
 .titleContainer {
 	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+
+	@media (max-width: 375px) {
+		font-size: 2rem;
+	}
 
 }
 .flagImg {

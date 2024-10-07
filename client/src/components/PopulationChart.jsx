@@ -3,10 +3,10 @@ import { LineChart } from "@mui/x-charts";
 const PopulationChart = ({ population }) => {
 	return (
 		<>
+		<h2>The next chart shows the changes in population over the years</h2>
 			<LineChart
 				xAxis={[{ dataKey: 'year' }]}
 				series={[{ dataKey: 'value' }]}
-				width={600}
 				height={500}
 				dataset={population}
 			/>

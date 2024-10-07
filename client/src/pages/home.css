@@ -1,0 +1,28 @@
+.list {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	width: 100%;
+	padding: 0;
+	margin: auto;
+}
+
+.listItem {
+	display: block;
+	text-align: center;
+	align-items: center;
+	width: 25%;
+	max-width: 200px;
+	margin: 1px;
+	padding: 1px;
+	background-color: #ffaa22;
+
+	@media (max-width: 375px) {
+		font-size: 0.75rem;
+	}
+
+}
+
+.listItem:hover {
+	background-color: #ffbb55
+}

@@ -16,18 +16,18 @@ const CountryInfo = () => {
 
 
 	return (
-		<div>
+		<div className="container">
 			{countryData &&
-				<div className="">
+				<div>
 					<div className="titleContainer">
-					<h1>{countryData.info.commonName}</h1>
+						<h1>{countryData.info.commonName}</h1>
 						<img alt='flag' src={countryData.flag} className="flagImg" />
 					</div>
 					<BordersWidget borders={countryData.info.borders} />
 					<PopulationChart population={countryData.population} />
-					<p>{JSON.stringify(countryData.population)}</p>
 				</div>
 			}
+			<a href="/">Go back to the list</a>
 		</div>
 	)
 }
